@@ -67,20 +67,39 @@
 
             <div class="row">
 
-                <div class="col-md-3">
-                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
-                        <ul class="nav">
-                            <li><a href="#line2">How to Install & Open VLC</a></li>
-                            <li><a href="#line3">Instr 1 - Playing a Video File</a></li>
-                            <li><a href="#line4">Instr 2 - Adding Subtitles</a></li>
-                          <!--  <li><a href="#line5">Exer. 1 - Video Recording</a></li>
-                            <li><a href="#line6">Exer. 2 - Files Conversion</a></li> -->
-                            <li><a href="#line7">Keybinds & Shortcuts</a></li>
-                            <li><a href="#line8">Playback Options</a></li>
-                            <li><a href="index.html">Back to Frontpage</a></li>
+              <div class="col-md-3">
+                  <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                      <ul class="nav">
+                          <li><a href="#line2">How to Install & Open VLC</a></li>
+                          <li><a href="#line3">Instruction 1</a></li>
+                          <li><a href="#line4">Instruction 2</a></li>
+                          <li><a href="#line5">Additional Functions</a></li>
+                          <li><a href="#line6">Understanding VLC</a></li>
+                          <li><a href="index.html">#Back to the frontpage</a></li>
+                      </ul>
+
+                      <div>
+                        <hr>
+                        <hr>
+                        <hr>
+                      <h5>VLC keybinds</h5>
+                        <ul>
+                          <li>Toolbars: [CTRL] + [H]</li>
+                          <li>Preferences: [CTRL] + [P]</li>
+                          <li>Playlists/library: [CTRL] + [L]</li>
+                          <li>Open file: [CTRL] + [O]</li>
+                          <li>Play/pause video: [SPACE]</li>
+                          <li>Volume: [CTRL] + [ARROW UP/DOWN]</li>
                         </ul>
-                    </nav >
-                </div>
+                    </div>
+
+
+
+
+
+
+                  </nav >
+              </div>
                 <div class="col-md-9">
 
 
@@ -180,111 +199,71 @@
                         <hr>
 
                     </section>
-                    <!-- end section -->
 
-                      <!--<section id="line5" class="section">
-
+                    <section id="line5" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Recording a video file<a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Additional VLC function<a href="#top">#back to top</a><hr></h2>
                             </div>
                         </div>
-                        <h4><strong>Step 0</strong> - Download this example video file to do this task: <a href="images/upload/examplesubtitle.srt" download>examplevideo.mp4</a>.</h4>
+
+                        <p>The new functions are the video file conversion and the record function which records a part of a video you're currently watching.</p>
                         <hr>
 
-                        <h4><strong>Step 1</strong> - Start off by add the recording bar, follow the picture below.</h4>
-                        <a href="images/prettyPhoto/windows_recording/1.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/windows_recording/1.png" alt="" class="img-responsive img-thumbnail"></a>
-                        <hr>
+                        <h4>Video File conversion for playback on different devices</h4>
+                          <p>Media devices are compatible only with file formats their manufacturers set. VLC can convert different video files to what your device is compatible with and change the resolution of the video for more efficiency when playing. This function can be found in the media tab.</p>
+                          <div class="col-md-12">
+                            <div class="big-title text-center">
+                              <a href="images/prettyPhoto/vlc/Tablefiletypes.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/vlc/Tablefiletypes.png" alt="" class="img-responsive img-thumbnail"></a>
+                                  <p class="lead">Figure 1. Simplified Fileformat Table.</p>
+                              </div>
+                              <!-- end title -->
+                          </div>
+                          <p>Here are some of the different video file types, we didn't go into all of them because there are many types and the fact that these are the most commonly used.</p>
 
-                        <h4><strong>Step 2</strong> - Record part of the video.</h4>
-                        <div><p> Note: You have to specify where the new file will be saved. Go to "Preferences" and then "Input/Codec" and change it to the folder you want. </p></div>
-                        <a href="images/prettyPhoto/windows_recording/2.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/windows_recording/2.png" alt="" class="img-responsive img-thumbnail"></a>
-                        <hr>
+                          <hr>
 
-
+                         <h4>Recording part of a video</h4>
+                         <p>VLC can record a part of a video that is playing on your screen and saves it as a .ts file which you can convert later on with the conversion function above. This function can be found in the Playback tab.</p>
                     </section>
 
                     <section id="line6" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Converting a video file<a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Understanding VLC<a href="#top">#back to top</a><hr></h2>
                             </div>
                         </div>
 
-                        <h4><strong>Step 0</strong> - Use the file you recorded from above to do this task.</h4>
+                        <h4>Datastructure</h4>
                         <hr>
 
-                        <h4><strong>Step 1</strong> - Go the the “Media”, and click on the “Convert / Save...”.</h4>
-                        <a href="images/prettyPhoto/windows_conversion/1.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/windows_conversion/1.png" alt="" class="img-responsive img-thumbnail"></a>
+                        <p>In order to fully utilize the program and understand it’s functions, we’ll need to look at how it is structured and how the different functions work.</p>
+                        <div class="col-md-12">
+                          <div class="big-title text-center">
+                            <a href="images/prettyPhoto/vlc/Structure_model.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/vlc/Structure_model.png" alt="" class="img-responsive img-thumbnail"></a>
+                                <p class="lead">Figure 2. Structure Model.</p>
+                            </div>
+                            <!-- end title -->
+                        </div>
+                        <hr>
+                        <p>The figure above illustrates how VLC is structured. The Program accesses the files uploaded by the user from the computers directory. VLC then on some
+                        of it’s functions creates a new file and save it on the users specified directory-folder.</p>
+
+                        <h4>Functions</h4>
                         <hr>
 
-                        <h4><strong>Step 2</strong> - Add the file you want to convert, in this case it’s the file from above & Click “Convert / Save”.</h4>
-                        <a href="images/prettyPhoto/windows_conversion/2.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/windows_conversion/2.png" alt="" class="img-responsive img-thumbnail"></a>
-                        <hr>
-
-                        <h4><strong>Step 3</strong> - Choose the destination for the new file.</h4>
-                        <a href="images/prettyPhoto/windows_conversion/3.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/windows_conversion/3.png" alt="" class="img-responsive img-thumbnail"></a>
-                        <hr>
+                        <p>VLC functions can be divided into two process, read and write. The read process reads the files uploaded by the user and plays it. When a video file is played, other processes can be used to overlay a subtitle file, and various postprocess effects (ie. color grading) the video. While reading the file, synchronizing both the audio and subtitles to the video is also possible. The function processes can be seen below.</p>
+                        <a href="images/prettyPhoto/vlc/FunctionModel-2.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/vlc/FunctionModel-2.png" alt="" class="img-responsive img-thumbnail"></a>
+                        <div class="col-md-12">
+                            <div class="big-title text-center">
+                                <p class="lead">Figure 3. Function Model.</p>
+                            </div>
+                            <!-- end title -->
+                        </div>
 
                     </section>
-                  -->
 
-
-                    <section id="line7" class="section">
-
-                        <div class="row">
-                            <div class="col-sx-4">
-
-                              <p>Note: Look up the specific keybinds for your Operating System if interested. They are described in the VLC settings [CTRL] + [P].</p>
-                              <p> The keybinds described below is for Windows and Linux.</p>
-
-                              <h4>VLC keybinds</h4>
-                                <ul>
-                                  <li>Toggle VLC toolbars: [CTRL] + [H]</li>
-                                  <li>Properties and settings: [CTRL] + [P]</li>
-                                </ul>
-                                <hr>
-
-                                <h4>Playback keybinds</h4>
-                                <ul>
-                                  <li>Playlists and library: [CTRL] + [L]</li>
-                                  <li>Browse local files: [CTRL] + [O]</li>
-                                  <li>Play / pause video: [SPACE]</li>
-                                  <li>Volume control: [CTRL] + [ARROW UP / DOWN]</li>
-                                </ul>
-                                <hr>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line8" class="section">
-
-                        <div class="row">
-                            <div class="col-sx-12 left-align">
-                                <h2 class="dark-text">Playback options<a href="#top">#back to top</a><hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-4">
-                              <p>The feature "Always on top" enables the VLC player to never be hidden behind other windows. This feature is brilliant if you need to watch something while working.</p>
-                              <h4>In the VLC toolbar, click the dropdown-menu "Video", select "Always on top".</h4>
-                              <a href="images/prettyPhoto/vlc/winlin_ontop.png" data-rel="prettyPhoto"><img src="images/prettyPhoto/vlc/winlin_ontop.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <hr>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </section>
                 </div>
                 <!-- // end .col -->
 
